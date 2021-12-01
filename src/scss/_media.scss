@@ -1,0 +1,155 @@
+@media (min-width: 0) and (max-width: 576px) {
+  .header {
+    .navbar {
+      flex-direction: column;
+      background-color: #fff;
+      padding-bottom: 100px;
+      display: none;
+      &.active {
+        display: flex;
+      }
+      &__logo {
+        margin-right: 0;
+        transform: scale(1.5);
+      }
+      &__nav {
+        padding: 0;
+        margin: 0;
+        flex-direction: column;
+        align-items: center;
+      }
+      .nav__item {
+        margin-right: 0;
+        margin-top: 20px;
+        .nav__link {
+          font-size: 30px;
+        }
+      }
+    }
+    .burger {
+      width: 30px;
+      height: 30px;
+      position: fixed;
+      top: 30px;
+      right: 30px;
+      span {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: #8543dc;
+        &::before {
+          content: '';
+          position: absolute;
+          top: -8px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #8543dc;
+        }
+        &::after {
+          content: '';
+          position: absolute;
+          top: 8px;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: #8543dc;
+        }
+      }
+    }
+  }
+
+  .home {
+    padding: 0 15px;
+    height: 100vh;
+
+    .row {
+      flex-wrap: wrap;
+    }
+
+    .col {
+      width: 100%;
+      flex: 0 1 auto;
+
+      &:last-child {
+        order: -1;
+      }
+    }
+
+    &__text {
+      text-align: center;
+
+      &:first-child {
+        padding-top: 0;
+      }
+    }
+
+    &__title {
+      text-align: center;
+      font-size: 50px;
+      display: flex;
+    }
+
+    &__btn {
+      display: block;
+      margin: 0 auto;
+    }
+
+    &__avatar {
+      width: 100%;
+      padding-top: 50px;
+    }
+  }
+
+  .services {
+    padding: 0 15px;
+
+    .col {
+      flex: 1 0 auto;
+    }
+  }
+
+  .portfolio {
+    padding: 50px 15px 60px;
+
+    .col {
+      flex: 1 0 auto;
+    }
+  }
+
+  .clients {
+    padding: 50px 15px;
+
+    .wrapper {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
+  .testimonials {
+    padding: 50px 15px 100px;
+
+    .wrapper {
+      display: none;
+    }
+  }
+
+  .blog {
+    padding: 50px 15px;
+
+    &__row {
+      flex-direction: column;
+    }
+
+    &__card:last-child {
+      margin-top: 10px;
+    }
+  }
+
+  .contact {
+    padding: 50px 15px;
+  }
+}
